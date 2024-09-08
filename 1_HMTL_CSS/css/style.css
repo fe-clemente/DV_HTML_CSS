@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+* {  /* zerando margin */
+    margin: 0;
+    padding: 0;  
+}
+
+body{ /* corpo da pagina */
+    height: 100 vh ;/* altura definir 100% da tela  */
+    box-sizing: border-box; /*mantendo a estrutura dentro do main  */
+    background-color:#000000; 
+    color: #f6f6f6;
+}
+
+.destaque {
+    color: #22D4FD;/*cor texto */          
+}
+
+.apresentacao_pai_flexbox{  /*.apresentacao*/
+    margin: 10%, 15%; /* da margem para todos os elementos */
+    display: flex;  /*  flex box dentro do mais ou dentro do Pai  classe no main */
+    align-items: center; /* centralizando os item na horizontal */
+    justify-content: space-between; /* espaço os 2 elementos filhos, imagem e texto*/
+      
+
+}
+
+.apresentacao_filho_conteudo{ /*dentro de section  .apresentacao__conteudo  */ 
+    width: 615px;/*limite da width o texto comeca uma nova linha*/
+    display: flex;        /* separando os elementos div, section, text* SEMPRE NO CONTEUDO PRINCIPAL QUE É APRESENTACAO */
+  flex-direction:column; /*   informando a direncao da coluna, por padrao é linha*/
+  gap: 40; /* espaçamento entre os itens */
+
+
+}
+
+.apresentacao_titulo_h1{ /*fonte dentro de H1*/
+      font-size: 36px; 
+    font-family: "Krona One", sans-serif;
+  
+  
+}
+
+.apresenta_conteudo_texto{
+ font-size: 24px;         /* conteudo do texto*/
+ font-family: "Montserrat", sans-serif;
+
+    
+}
+
+.botoes_principais {
+    display: flex;  /* separando os elementos do pai (main) */
+    justify-content: space-between;
+ 
+}
+
+.estilo_botoes {
+    background-color: #22D4FD;
+    width: 280px; /* largura dos botoes*/
+    text-align: center;
+    border-radius: 16px; /*arredonda as bordas*/
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0 ; /*primeiro valor é o top*/
+    text-decoration: none;
+    color:  #000000;
+    font-family: "Montserrat", sans-serif;
+
+
+} 
