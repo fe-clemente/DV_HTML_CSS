@@ -1,34 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- link css -->
+    <title>Sobre</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header></header>
+
+    <header class="cabecalho">
+        <nav class="cabecalho_menu"> <!-- Display - flex separado de container-->
+            <a class="cabecalho_menu_link" href="Index.html">Home</a>
+            <a class="cabecalho_menu_link" href="About.html">Sobre</a>
+        </nav>
+    </header>
+
+
     <main class="apresentacao_pai_flexbox">
-        <section> <!-- separar a imagem em outro bloco abaixo-->
-            <h1 class="apresentacao_titulo_h1">
-                <div class="titulo">Eleve seu negócio digital a outro nível</div>
+        <section class="apresentacao_filho_conteudo"> <!-- Display - flex separado de container-->
+            <h1 class="apresentacao_titulo_h1"> 
+
+                <div>Eleve seu negócio digital a outro nível</div>
                 <strong><!-- destaca letra-->
                     <div class="destaque"> com um Front-end de qualidade!</div>
                 </strong>
             </h1><!-- titulo-->
-            <p class="apresenta_conteudo_texto">Olá! Sou Joana Santos, desenvolvedora Front-end com especialidade em React, HTML e CSS. Ajudo pequenos
+            <p class="apresenta_conteudo_texto">Olá! Sou Joana Santos, desenvolvedora Front-end com especialidade em
+                React, HTML e CSS. Ajudo pequenos
                 negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+
+
             <div class="botoes_principais ">
-            <a class="estilo_botoes" href="www.instagram.com.br">Instagram</a><!-- link botao instagram-->
-            <a class="estilo_botoes" href="www.gitHub.com.br">GitHub</a><!-- link git gitHub instagram-->
-            <a class="estilo_botoes" href="linkedin.com.br">linkedin</a><!-- link git gitHub instagram-->
-        </div>
+                <h2 class="minha_redes_links_subti">Acesse minhas redes</h2>
+                <a class="estilo_botoes" href="www.instagram.com.br">
+                    <img src="assets/instagram.png" alt="">Instagram</a><!-- link botao instagram-->
+                <a class="estilo_botoes" href="www.gitHub.com.br">
+                    <img src="assets/github.png" alt="">GitHub</a><!-- link git gitHub instagram-->
+                <a class="estilo_botoes" href="www.twitter.com.br">
+                    <img src="assets/twitter.png" alt="">Twitter</a>
+            </div>
         </section> <!-- separar a imagem em outro bloco acima -->
-        <img src="img/Imagem.png" alt="Imagem joana"> <!-- chamando imagem-->
+        
+        <img src="assets/Imagem.png" alt="Imagem joana"> <!-- chamando imagem-->
+   
     </main>
-    <footer></footer> <!--rodapé-->
+
+    <footer>
+        <p class="rodape">Rodapé Desenvolvimento</p>
+    </footer> <!--rodapé-->
+
 </body>
 
 </html>

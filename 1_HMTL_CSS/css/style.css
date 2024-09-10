@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root{     /* variabel global*/
+    --cor-preta: #000000;
+    --cor-branca: #f6f6f6;
+    --cor-azul: #22D4FD;
+    --hover: #272727;
+
+    --font-krona: 'krona one', sans-serif;
+    --font-Mont:"Montserrat", sans-serif;
+
+}
+
+
 
 * {  /* zerando margin */
     margin: 0;
@@ -7,18 +19,41 @@
 }
 
 body{ /* corpo da pagina */
-    height: 100 vh ;/* altura definir 100% da tela  */
+   /* height: 100 vh ; altura definir 100% da tela , comentado devido ao footer  */
     box-sizing: border-box; /*mantendo a estrutura dentro do main  */
-    background-color:#000000; 
-    color: #f6f6f6;
+    background-color:var(--cor-preta); 
+    color: var(--cor-azul)
 }
 
+
+.cabecalho{
+    padding: 2% 0 0 15%;  /* espacando os menus superior e laterial, vertical e horizontal  */
+
+
+}
+
+.cabecalho_menu{
+    display: flex;  /* separando os elementos  e inicializando os flexbox */
+    gap: 80px
+    
+}
+
+
+.cabecalho_menu_link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: var(--cor-azul);
+    text-decoration: none;
+    
+}
+
+
 .destaque {
-    color: #22D4FD;/*cor texto */          
+    color: var(--cor-azul);/*cor texto */          
 }
 
 .apresentacao_pai_flexbox{  /*.apresentacao*/
-    margin: 10%, 15%; /* da margem para todos os elementos */
+    padding: 8% 15% ; /* da margem para todos os elementos */
     display: flex;  /*  flex box dentro do mais ou dentro do Pai  classe no main */
     align-items: center; /* centralizando os item na horizontal */
     justify-content: space-between; /* espaço os 2 elementos filhos, imagem e texto*/
@@ -29,8 +64,8 @@ body{ /* corpo da pagina */
 .apresentacao_filho_conteudo{ /*dentro de section  .apresentacao__conteudo  */ 
     width: 615px;/*limite da width o texto comeca uma nova linha*/
     display: flex;        /* separando os elementos div, section, text* SEMPRE NO CONTEUDO PRINCIPAL QUE É APRESENTACAO */
-  flex-direction:column; /*   informando a direncao da coluna, por padrao é linha*/
-  gap: 40; /* espaçamento entre os itens */
+  flex-direction:  column; /*   informando a direncao da coluna, por padrao é linha*/
+  gap: 40px; /* espaçamento entre os itens */
 
 
 }
@@ -38,34 +73,66 @@ body{ /* corpo da pagina */
 .apresentacao_titulo_h1{ /*fonte dentro de H1*/
       font-size: 36px; 
     font-family: "Krona One", sans-serif;
+    color: var(--cor-branca);
   
   
 }
 
 .apresenta_conteudo_texto{
  font-size: 24px;         /* conteudo do texto*/
- font-family: "Montserrat", sans-serif;
+ font-family: var(--font-Mont);
+ color: var(--cor-branca);
+
 
     
 }
 
 .botoes_principais {
     display: flex;  /* separando os elementos do pai (main) */
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 32px;
  
 }
 
+.minha_redes_links_subti{
+    font-family: var(--font-krona);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--cor-branca);
+
+}
+
+
 .estilo_botoes {
-    background-color: #22D4FD;
-    width: 280px; /* largura dos botoes*/
+    display: flex;  /* alinhando icones dentro do botao, separando os container*/
+    justify-content: center;
+    gap: 16px;
+    /*background-color: #22D4FD;*/
+    border: 2px solid var(--cor-azul);  /* 1° espessura, 2° tipo, 3° cor */
+     width: 378px; /* largura dos botoes */
     text-align: center;
-    border-radius: 16px; /*arredonda as bordas*/
+    border-radius: 8px; /*arredonda as bordas*/
     font-size: 24px;
     font-weight: 600;
     padding: 21.5px 0 ; /*primeiro valor é o top*/
     text-decoration: none;
-    color:  #000000;
-    font-family: "Montserrat", sans-serif;
-
-
+    color: var(--cor-branca);
+    font-family: var(--font-Mont)
 } 
+
+.estilo_botoes:hover {   /* hover dos botoes  */
+    background-color: var(--hover);
+}
+
+.rodape{
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--cor-preta);
+    background-color:var(--cor-azul);
+
+}
