@@ -2,101 +2,122 @@
 
 
 
-:root{     /* variabel global*/
+:root {
+    /* variabel global*/
     --cor-preta: #000000;
     --cor-branca: #f6f6f6;
     --cor-azul: #22D4FD;
     --hover: #272727;
 
     --font-krona: 'krona one', sans-serif;
-    --font-Mont:"Montserrat", sans-serif;
+    --font-Mont: "Montserrat", sans-serif;
 }
 
 
 
-* {  /* zerando margin */
+* {
+    /* zerando margin */
     margin: 0;
-    padding: 0;  
+    padding: 0;
 }
 
-body{ /* corpo da pagina */
-   /* height: 100 vh ; altura definir 100% da tela , comentado devido ao footer  */
-    box-sizing: border-box; /*mantendo a estrutura dentro do main  */
-    background-color:var(--cor-preta); 
+body {
+    /* corpo da pagina */
+    /* height: 100 vh ; altura definir 100% da tela , comentado devido ao footer  */
+    box-sizing: border-box;
+    /*mantendo a estrutura dentro do main  */
+    background-color: var(--cor-preta);
     color: var(--cor-azul)
 }
 
 
-.cabecalho{
-    padding: 2% 0 0 15%;  /* espacando os menus superior e laterial, vertical e horizontal  */
+.cabecalho {
+    padding: 2% 0 0 15%;
+    /* espacando os menus superior e laterial, vertical e horizontal  */
 }
 
-.cabecalho_menu{
-    display: flex;  /* separando os elementos  e inicializando os flexbox */
-    gap: 80px;  /* alterado    estava 80px */
-    
+.cabecalho_menu {
+    display: flex;
+    /* separando os elementos  e inicializando os flexbox */
+    gap: 80px;
+    /* alterado    estava 80px */
+
 }
 
 
-.cabecalho_menu_link{
+.cabecalho_menu_link {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     color: var(--cor-azul);
     text-decoration: none;
-    
+
 }
 
 
 .destaque {
-    color: var(--cor-azul);/*cor texto */          
+    color: var(--cor-azul);
+    /*cor texto */
 }
 
-.apresentacao_pai_flexbox{  /*.apresentacao*/
-    padding: 8% 10% ; /* da margem para todos os elementos */
-    display: flex;  /*  flex box dentro do mais ou dentro do Pai  classe no main */
-    align-items: center; /* centralizando os item na horizontal */
-    justify-content: space-between; /* espaço os 2 elementos filhos, imagem e texto*/
+.apresentacao_pai_flexbox {
+    /*.apresentacao*/
+    padding: 8% 10%;
+    /* da margem para todos os elementos */
+    display: flex;
+    /*  flex box dentro do mais ou dentro do Pai  classe no main */
+    align-items: center;
+    /* centralizando os item na horizontal */
+    justify-content: space-between;
+    /* espaço os 2 elementos filhos, imagem e texto*/
     gap: 82px;
-      
-
-}
-
-.apresentacao_filho_conteudo{ /*dentro de section  .apresentacao__conteudo  */ 
-    width: 50%;/*limite da width o texto comeca uma nova linha - - trocar px por %*/
-    display: flex;        /* separando os elementos div, section, text* SEMPRE NO CONTEUDO PRINCIPAL QUE É APRESENTACAO */
-  flex-direction:  column; /*   informando a direncao da coluna, por padrao é linha*/
-  gap: 40px; /* espaçamento entre os itens */
 
 
 }
 
-.apresentacao_titulo_h1{ /*fonte dentro de H1*/
-      font-size: 2.25rem; 
+.apresentacao_filho_conteudo {
+    /*dentro de section  .apresentacao__conteudo  */
+    width: 50%;
+    /*limite da width o texto comeca uma nova linha - - trocar px por %*/
+    display: flex;
+    /* separando os elementos div, section, text* SEMPRE NO CONTEUDO PRINCIPAL QUE É APRESENTACAO */
+    flex-direction: column;
+    /*   informando a direncao da coluna, por padrao é linha*/
+    gap: 40px;
+    /* espaçamento entre os itens */
+
+
+}
+
+.apresentacao_titulo_h1 {
+    /*fonte dentro de H1*/
+    font-size: 2.25rem;
     font-family: "Krona One", sans-serif;
     color: var(--cor-branca);
-  
-  
+
+
 }
 
-.apresenta_conteudo_texto{
- font-size: 1.5rem;         /* conteudo do texto*/
- font-family: var(--font-Mont);
- color: var(--cor-branca);
+.apresenta_conteudo_texto {
+    font-size: 1.5rem;
+    /* conteudo do texto*/
+    font-family: var(--font-Mont);
+    color: var(--cor-branca);
 
 
-    
+
 }
 
 .botoes_principais {
-    display: flex;  /* separando os elementos do pai (main) */
+    display: flex;
+    /* separando os elementos do pai (main) */
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 32px;
- 
+
 }
 
-.minha_redes_links_subti{
+.minha_redes_links_subti {
     font-family: var(--font-krona);
     font-weight: 400;
     font-size: 1.5rem;
@@ -106,63 +127,76 @@ body{ /* corpo da pagina */
 
 
 .estilo_botoes_navegacao {
-    display: flex;  /* alinhando icones dentro do botao, separando os container*/
+    display: flex;
+    /* alinhando icones dentro do botao, separando os container*/
     justify-content: center;
     gap: 16px;
     /*background-color: #22D4FD;*/
-    border: 2px solid var(--cor-azul);  /* 1° espessura, 2° tipo, 3° cor */
-     width: 50%; /* largura dos botoes */
+    border: 2px solid var(--cor-azul);
+    /* 1° espessura, 2° tipo, 3° cor */
+    width: 50%;
+    /* largura dos botoes */
     text-align: center;
-    border-radius: 8px; /*arredonda as bordas*/
+    border-radius: 8px;
+    /*arredonda as bordas*/
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 21.5px 0 ; /*primeiro valor é o top*/
+    padding: 21.5px 0;
+    /*primeiro valor é o top*/
     text-decoration: none;
     color: var(--cor-branca);
     font-family: var(--font-Mont)
-    
-} 
+}
 
-.estilo_botoes:hover {   /* hover dos botoes  */
+.estilo_botoes:hover {
+    /* hover dos botoes  */
     background-color: var(--hover);
 }
 
 
-.apresentacao_imagem{
-    width: 50%;  /* unidade realtiva do rodape em % */
+.apresentacao_imagem {
+    width: 50%;
+    /* unidade realtiva do rodape em % */
 }
 
 
 
-.rodape{
+.rodape {
     padding: 1%;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
     color: var(--cor-preta);
-    background-color:var(--cor-azul);
+    background-color: var(--cor-azul);
 
 }
 
-@media (max-width : 1300px) {  /*  media, enquanto a tela estiver até 1300 px usar o css  normal, se passar disso, vai usasr a classe do css com as alteracaoes  */
+@media (max-width : 1300px) {
+    /*  media, enquanto a tela estiver até 1300 px usar o css  normal, se passar disso, vai usasr a classe do css com as alteracaoes  */
 
-.apresentacao_pai_flexbox {
+    .apresentacao_pai_flexbox {
 
-    flex-direction: column-reverse;  /* inverterno a fot para cima do texto */
-}
+        flex-direction: column-reverse;
+        /* inverterno a fot para cima do texto */
+    }
 
-.cabecalho{ 
-    padding:  2%;
-}
+    .cabecalho {
+        padding: 2%;
+    }
 
-.cabecalho_menu{
-    justify-content: center ;
- }
- .estilo_botoes_navegacao {
+    .cabecalho_menu {
+        justify-content: center;
+        padding: 5%;
+    }
+
+    .apresentacao_filho_conteudo {
+        width: auto;
+    }
+
+
+    /*.estilo_botoes_navegacao 
     width: 100%; /* largura dos botões ocupa 100% da tela em dispositivos menores */
-    font-size: 1.2rem; /* diminui o tamanho da fonte em telas menores */
-    padding: 16px 0; /* ajusta o padding para telas menores */
+    /*font-size: 1.2rem; /* diminui o tamanho da fonte em telas menores */
+    /* padding: 16px 0; /* ajusta o padding para telas menores */
 }
-
-}   
