@@ -1,18 +1,18 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-
-
 :root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-fundo: #00030C;
-    --fonte-1:"Inter", sans-serif;
+    --fonte-principal:"Inter";
 }
 
 body{
     background-color: var(--cor-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;   /* como a fonte esta dentro do body, esta replicado a todos os textos*/
 }
 
 h1{
@@ -46,27 +46,21 @@ h1{
     border-radius: 5px;   /*arredonda borda*/
     padding: 1rem; /* tamanho do container */
     display: block; /* fazendo botao ficar em baixo como bloco sao invez de linha  */
+    text-decoration: none;  /*tirando o sublinhado*/
   
-
-
 }
 
-.container__botao_secudario{
+.botao_secudario{
     background-color:transparent;   /*   cor principa */
-    border: 2px solid var(--branco-principal);
-    border-color: var(--branco-principal);
-    color: var(--branco-principal);   /* cor letra  */
-    border-radius: 5px;   /*arredonda borda*/
-    padding: 1rem; /* tamanho do container */
-    display: block; /* fazendo botao ficar em baixo como bloco sao invez de linha  */   
-
+    border: 2px solid var(--branco-principal); 
 }
-p{
-    color: var(--branco-principal);
-    font-size: 12px;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;3+
-    8
 
+.container__aviso{
+font-size: 12px;     /* sobrescrevendo a formacao da fonte padrao em body */
+color: var(--cinza-secundario);
+}
+
+.container__tilulo{
+    font-size: 28px;
+    font-weight: 700px ;
 }
