@@ -1,8 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
 :root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-fundo: #00030C;
+    --fonte-1:"Inter", sans-serif;
 }
 
 body{
@@ -13,8 +19,54 @@ h1{
     color: var(--branco-principal);
 }
 
-
+                                
 * {
     margin: 0;
     padding: 0;
+}
+
+.principal{
+    background-image: url(img/Background.png); /* busca imagem de fundo pois é apenas decorativo */
+    background-repeat: no-repeat;   /*nao repete o fundo*/
+    background-size: contain; /* pega o fundo e coloca a imagem em todo o container*/
+
+}
+.container{      /*princpal e container     dentro da section para definir imagem fundo e combo*/
+    height: 100vh;   /*fefinindo o estaço do fundo */
+    display: grid;
+    grid-template-columns: 33% 33% 33%; 
+    
+   
+   
+}
+
+.container__botao{
+    background-color: var(--botao-azul);   /*   cor principa */
+    color: var(--branco-principal);   /* cor letra  */
+    border-radius: 5px;   /*arredonda borda*/
+    padding: 1rem; /* tamanho do container */
+    display: block; /* fazendo botao ficar em baixo como bloco sao invez de linha  */
+  
+
+
+}
+
+.container__botao_secudario{
+    background-color:transparent;   /*   cor principa */
+    border: 2px solid var(--branco-principal);
+    border-color: var(--branco-principal);
+    color: var(--branco-principal);   /* cor letra  */
+    border-radius: 5px;   /*arredonda borda*/
+    padding: 1rem; /* tamanho do container */
+    display: block; /* fazendo botao ficar em baixo como bloco sao invez de linha  */   
+
+}
+p{
+    color: var(--branco-principal);
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;3+
+    8
+
 }
