@@ -34,8 +34,9 @@ h1{
 .container{      /*princpal e container     dentro da section para definir imagem fundo e combo*/
     height: 100vh;   /*fefinindo o estaço do fundo */
     display: grid;
-    grid-template-columns: 33% 33% 33%; 
-    
+    grid-template-columns: 50% 50%;   /* divide a tela em 2 colunas  */
+    align-items: center;  /* alinha tudo ao centro da coluna pois nao esta definido como linha*/
+    text-align: center; /* alinha tudo que esta dentro de um elemento de bloco */
    
    
 }
@@ -44,10 +45,10 @@ h1{
     background-color: var(--botao-azul);   /*   cor principa */
     color: var(--branco-principal);   /* cor letra  */
     border-radius: 5px;   /*arredonda borda*/
-    padding: 1rem; /* tamanho do container */
+    padding: 1em; /* tamanho do container  espacamento dentro da borda*/
     display: block; /* fazendo botao ficar em baixo como bloco sao invez de linha  */
     text-decoration: none;  /*tirando o sublinhado*/
-  
+  margin-bottom: 1em;  /* espacamento entre os botoes, delimita o espaco do desenho */
 }
 
 .botao_secudario{
@@ -63,4 +64,12 @@ color: var(--cinza-secundario);
 .container__tilulo{
     font-size: 28px;
     font-weight: 700px ;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;  /* margem  lemnbra do relogio*/
+}
+
+.container__caixa{ /*  div entre combo e imagens*/
+    margin: 0 6em; 
 }
